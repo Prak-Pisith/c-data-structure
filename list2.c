@@ -24,7 +24,7 @@ int main (void) {
   // Time passes
   // Need more spaces
 
-  int *tmp = malloc(4 * sizeof(int));
+  int *tmp = realloc(list, 4 * sizeof(int));
   // Safty check
   if (tmp == NULL) {
     free(list);
